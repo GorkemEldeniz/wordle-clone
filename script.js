@@ -74,14 +74,14 @@ const check = (row) => {
         },300*index)
         if(letter  ==  word[index]){
             word.splice(index,1,'Green');
-            cells[5*row + index].style.setProperty('background','green');
+            cells[5*row + index].style.setProperty('background','#538d4e');
         }
         else if(word.includes(letter)){
-            cells[5*row + index].style.setProperty('background','pink');
+            cells[5*row + index].style.setProperty('background','#b59f3b');
             word.splice(index,1,'Green');
         }
         else{
-            cells[5*row + index].style.setProperty('background','#ddd');
+            cells[5*row + index].style.setProperty('background','#3a3a3c');
         }
     })
 }
